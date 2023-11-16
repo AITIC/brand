@@ -9,10 +9,6 @@ class AccountInvoiceReport(models.Model):
 
     product_brand_id = fields.Many2one(comodel_name="product.brand", string="Brand")
 
-    #@property
-    #def _table_query(self):
-    #    return '%s %s %s %s' % (self._select(), self._from(), self._where(), self._group_by())
-
     @api.model
     def _select(self):
         select_str = super()._select()
