@@ -19,7 +19,6 @@
     "website": "https://github.com/OCA/brand",
     "license": "AGPL-3",
     "depends": [
-        "sale",
         "l10n_ar_account_aitic",
     ],
     "data": [
