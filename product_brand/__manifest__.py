@@ -9,7 +9,7 @@
 
 {
     "name": "Product Brand Manager",
-    "version": "15.0.1.0.1",
+    "version": "15.0.2.0.1",
     "development_status": "Mature",
     "category": "Product",
     "summary": "Product Brand Manager",
@@ -18,7 +18,9 @@
     "Prajapati, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/brand",
     "license": "AGPL-3",
-    "depends": ["sale"],
+    "depends": [
+        "l10n_ar_account_aitic",
+    ],
     "data": [
         "security/ir.model.access.csv",
         "views/product_brand_view.xml",
