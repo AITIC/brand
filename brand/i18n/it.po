@@ -69,11 +69,6 @@ msgid "Activity Type Icon"
 msgstr ""
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__additional_info
-msgid "Additional info"
-msgstr ""
-
-#. module: brand
 #: model_terms:ir.ui.view,arch_db:brand.res_brand_form_view
 msgid "Address"
 msgstr ""
@@ -143,16 +138,6 @@ msgstr ""
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__is_blacklisted
 msgid "Blacklist"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__mobile_blacklisted
-msgid "Blacklisted Phone Is Mobile"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__phone_blacklisted
-msgid "Blacklisted Phone is Phone"
 msgstr ""
 
 #. module: brand
@@ -267,11 +252,6 @@ msgid "Company Type"
 msgstr ""
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__partner_gid
-msgid "Company database ID"
-msgstr ""
-
-#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__contact_address
 msgid "Complete Address"
 msgstr ""
@@ -334,6 +314,11 @@ msgid "Currency"
 msgstr ""
 
 #. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__property_stock_customer
+msgid "Customer Location"
+msgstr ""
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__property_payment_term_id
 msgid "Customer Payment Terms"
 msgstr ""
@@ -379,13 +364,6 @@ msgstr ""
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__employee
 msgid "Employee"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__phone_sanitized
-msgid ""
-"Field used to store sanitized phone number. Helps speeding up searches and "
-"comparisons."
 msgstr ""
 
 #. module: brand
@@ -466,7 +444,6 @@ msgstr ""
 
 #. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__message_has_error
-#: model:ir.model.fields,help:brand.field_res_brand__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -482,13 +459,6 @@ msgstr ""
 msgid ""
 "If the email address is on the blacklist, the contact won't receive mass "
 "mailing anymore, from any list"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__phone_sanitized_blacklisted
-msgid ""
-"If the sanitized phone number is on the blacklist, the contact won't receive "
-"mass mailing sms anymore, from any list"
 msgstr ""
 
 #. module: brand
@@ -514,22 +484,6 @@ msgstr ""
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__image_512
 msgid "Image 512"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__mobile_blacklisted
-msgid ""
-"Indicates if a blacklisted sanitized phone number is a mobile number. Helps "
-"distinguish which number is blacklisted             when there is both a "
-"mobile and phone field in a model."
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__phone_blacklisted
-msgid ""
-"Indicates if a blacklisted sanitized phone number is a phone number. Helps "
-"distinguish which number is blacklisted             when there is both a "
-"mobile and phone field in a model."
 msgstr ""
 
 #. module: brand
@@ -625,6 +579,11 @@ msgstr ""
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__sale_warn_msg
 msgid "Message for Sales Order"
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__picking_warn_msg
+msgid "Message for Stock Picking"
 msgstr ""
 
 #. module: brand
@@ -748,16 +707,6 @@ msgid "Phone"
 msgstr ""
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__phone_sanitized_blacklisted
-msgid "Phone Blacklisted"
-msgstr ""
-
-#. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__phone_mobile_search
-msgid "Phone/Mobile"
-msgstr ""
-
-#. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__property_payment_method_id
 msgid ""
 "Preferred payment method when paying this vendor. This is used to filter "
@@ -796,11 +745,6 @@ msgid "Responsible User"
 msgstr ""
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__sale_contract_count
 msgid "Sale Contracts"
 msgstr ""
@@ -831,12 +775,8 @@ msgid "Salesperson"
 msgstr ""
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__phone_sanitized
-msgid "Sanitized Number"
-msgstr ""
-
-#. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__invoice_warn
+#: model:ir.model.fields,help:brand.field_res_brand__picking_warn
 #: model:ir.model.fields,help:brand.field_res_brand__sale_warn
 msgid ""
 "Selecting the \"Warning\" option will notify user with the message, "
@@ -892,6 +832,11 @@ msgid ""
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__picking_warn
+msgid "Stock Picking"
 msgstr ""
 
 #. module: brand
@@ -959,6 +904,18 @@ msgstr ""
 msgid ""
 "The partner has at least one unreconciled debit and credit since last time "
 "the invoices & payments matching was performed."
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__property_stock_customer
+msgid ""
+"The stock location used as destination when sending goods to this contact."
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__property_stock_supplier
+msgid ""
+"The stock location used as source when receiving goods from this contact."
 msgstr ""
 
 #. module: brand
@@ -1071,6 +1028,11 @@ msgstr ""
 #. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__currency_id
 msgid "Utility field to express amount currency"
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__property_stock_supplier
+msgid "Vendor Location"
 msgstr ""
 
 #. module: brand
